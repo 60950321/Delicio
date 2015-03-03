@@ -1,20 +1,32 @@
 package com.pulendran.pirasanth.delicio;
 
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.support.annotation.NonNull;
+import static com.pulendran.pirasanth.delicio.R.layout.activity_main;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(activity_main);
         Log.d("pelle","test");
+
     }
     @Override
+
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        Log.i("pelle", "OrientationChanges");
+
+
+    }
+
     protected void onStart() {
         super.onStart();
         Log.i("pelle", "onStart");
@@ -72,6 +84,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Log.d("pelle","klikk");
+        //setContentView(R.layout.activity_dash_board);
+        Intent i = new Intent(this, DashBoard.class);
+        startActivity(i);
 
     }
 }
