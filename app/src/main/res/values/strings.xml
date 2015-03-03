@@ -3,5 +3,8 @@
 
     <string name="app_name">Delicio</string>
     <string name="action_settings">Jajaja</string>
+    <string name="fotsat">Tryk for at fortsætte</string>
+    <string name="logo">logo</string>
+    <string name="selvbetjening">Selvbetjening</string>
 
 </resources>
