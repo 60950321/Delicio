@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         Log.i("pelle", "OrientationChanges");
 
 
-    }
+}
 
     protected void onStart() {
         super.onStart();
